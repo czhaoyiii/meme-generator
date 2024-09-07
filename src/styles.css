@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background-color: #3d405b;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right, #81b19a, #f2cb8d);
+  align-items: center;
+  padding: 1.3rem 1.65rem;
+  cursor: default;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: auto;
+  gap: 0.5rem;
+}
+
+.logoImage {
+  height: 2rem;
+}
+
+.logoTitle {
+  font-size: 1.3rem;
+}
+
+.headerDesc {
+  font-size: 0.75rem;
+}
+
+/* Meme Input */
+
+.memeContainer {
+  padding: 2rem;
+  max-width: 56rem;
+  margin: auto;
+}
+
+.memeTextContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.memeTextLabel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+}
+
+.memeText {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d5d4d8;
+  height: 2rem;
+  margin-top: 5px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-indent: 5px;
+}
+
+.memeButton {
+  background-image: linear-gradient(to right, #81b19a, #f2cb8d);
+  margin-top: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Meme Display */
+
+.meme {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.memeImage {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.meme h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: calc(8vh + 1%);
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.topMemeText {
+  top: 10px;
+}
+
+.bottomMemeText {
+  bottom: 0;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem;
+  background-image: linear-gradient(to right, #81b19a, #f2cb8d);
+}
+
+.footerTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logoTitle,
+  .headerDesc,
+  .logo {
+    margin: 0;
+  }
+
+  .headerDesc {
+    margin-top: 5px;
+    margin-bottom: -5px;
+  }
+
+  .memeTextContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
