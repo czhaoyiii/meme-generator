@@ -19,7 +19,7 @@ git clone https://github.com/czhaoyiii/meme-generator/
 ```
 2. Navigate into the project directory:
 ```bash
-cd digital-business-card
+cd meme-generator
 ``` 
 3. Install the required packages:
 ```bash
